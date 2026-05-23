@@ -1,9 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 export async function POST(_request: NextRequest) {
+  const key = process.env.STRIPE_SECRET_KEY;
+
+  if (!key || key === 'ПОКА_ПУСТО') {
+    return NextResponse.json({ error: 'Оплата временно недоступна' }, { status: 503 });
+  }
+
+  const stripe = new Stripe(key);
+
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [
