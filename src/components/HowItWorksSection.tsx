@@ -2,14 +2,14 @@ const steps = [
   {
     number: '01',
     icon: '✍️',
-    title: 'Опишите симптомы',
-    description: 'Напишите что вас беспокоит — подробно, своими словами. Не стесняйтесь, здесь нет лишних деталей.',
+    title: 'Напишите в Telegram',
+    description: 'Опишите что беспокоит — своими словами, подробно. Можно голосовым сообщением. Всё на русском.',
   },
   {
     number: '02',
     icon: '💬',
     title: 'Получите ответ',
-    description: 'Я отвечу в течение нескольких часов. Объясню что происходит, что делать и стоит ли идти к врачу.',
+    description: 'Отвечу в течение нескольких часов. Объясню что происходит, что делать и стоит ли идти к врачу.',
   },
   {
     number: '03',
@@ -24,6 +24,7 @@ export function HowItWorksSection() {
     <section className="py-20 px-6 bg-blue-50">
       <div className="mx-auto max-w-4xl">
         <h2 className="text-3xl font-bold text-center text-gray-900">Как это работает</h2>
+        <p className="mt-3 text-center text-gray-600">Просто и быстро — без регистраций и ожиданий</p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {steps.map((step) => (
             <div key={step.number} className="rounded-3xl bg-white border border-gray-200 p-8 text-center shadow-sm">
@@ -33,6 +34,16 @@ export function HowItWorksSection() {
               <p className="text-gray-600 text-sm leading-6">{step.description}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-10 text-center">
+          <a
+            href="https://t.me/zulfiia424820"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-2xl bg-blue-600 px-8 py-4 text-base font-semibold text-white shadow hover:bg-blue-700 transition"
+          >
+            Написать в Telegram →
+          </a>
         </div>
       </div>
     </section>

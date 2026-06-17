@@ -8,48 +8,48 @@ export function AboutSection() {
               <span className="text-6xl">👩‍⚕️</span>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-gray-900">Здравствуйте!</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Здравствуйте, я — Зульфия!</h2>
               <p className="mt-4 text-lg text-gray-600 leading-8">
-                Я — фельдшер скорой помощи с <strong>37-летним стажем</strong>. Знаю, как бывает непросто попасть к врачу: очереди, записи, а иногда и просто страшно или дорого.
+                Фельдшер скорой помощи с <strong>37-летним стажем</strong>. За эти годы я приняла тысячи вызовов — знаю, что такое настоящий страх за близкого человека и как важно в нужный момент получить ясный ответ.
               </p>
-              <p className="mt-3 text-lg text-gray-700 font-medium">Я здесь, чтобы помочь вам быстро и без стресса:</p>
+              <p className="mt-3 text-lg text-gray-700 font-medium">Чем могу помочь:</p>
 
               <ul className="mt-4 space-y-3">
                 <li className="flex items-start gap-3 text-gray-700">
                   <span className="text-green-500 text-xl mt-0.5">✅</span>
-                  <span><strong>Подскажу, к какому врачу обратиться</strong> — разберёмся, нужен ли терапевт, хирург, невролог или другой специалист.</span>
+                  <span><strong>Подскажу, к какому врачу идти</strong> — терапевт, невролог, хирург или скорая? Разберёмся сразу.</span>
                 </li>
                 <li className="flex items-start gap-3 text-gray-700">
                   <span className="text-green-500 text-xl mt-0.5">✅</span>
-                  <span><strong>Дам советы по уходу и реабилитации</strong> — как правильно ухаживать за больным, что делать после травм или операций.</span>
+                  <span><strong>Помогу понять результаты анализов</strong> — объясню на человеческом языке, без медицинского жаргона.</span>
                 </li>
                 <li className="flex items-start gap-3 text-gray-700">
                   <span className="text-green-500 text-xl mt-0.5">✅</span>
-                  <span><strong>Помогу понять, когда нужна скорая, а когда можно лечиться дома</strong> — чтобы не тратить нервы и деньги зря.</span>
+                  <span><strong>Скажу честно — скорая или подождёт</strong> — 37 лет на вызовах дают точное чутьё на срочность.</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-700">
+                  <span className="text-green-500 text-xl mt-0.5">✅</span>
+                  <span><strong>Советы по уходу и реабилитации</strong> — после травм, операций, для пожилых родственников.</span>
                 </li>
               </ul>
 
               <div className="mt-8 rounded-2xl bg-blue-50 border border-blue-100 p-6">
-                <h3 className="text-lg font-bold text-gray-900">Почему мне можно доверять?</h3>
+                <h3 className="text-lg font-bold text-gray-900">Почему мне доверяют?</h3>
                 <ul className="mt-3 space-y-2">
                   <li className="flex items-start gap-2 text-gray-700">
                     <span className="text-blue-500 font-bold">·</span>
-                    <span>37 лет на скорой — это тысячи спасённых жизней и реальных историй.</span>
+                    <span>37 лет на скорой — тысячи реальных случаев, никакой теории.</span>
                   </li>
                   <li className="flex items-start gap-2 text-gray-700">
                     <span className="text-blue-500 font-bold">·</span>
-                    <span>Говорю просто и понятно, без сложных медицинских терминов.</span>
+                    <span>Говорю просто: «к терапевту в понедельник» или «вызывайте скорую сейчас».</span>
                   </li>
                   <li className="flex items-start gap-2 text-gray-700">
                     <span className="text-blue-500 font-bold">·</span>
-                    <span>Даю только проверенные советы, основанные на многолетнем опыте.</span>
+                    <span>Консультирую на русском — никаких недопониманий из-за языка.</span>
                   </li>
                 </ul>
               </div>
-
-              <p className="mt-6 text-lg font-semibold text-blue-600">
-                Не откладывайте здоровье на потом! Напишите мне прямо сейчас — вместе разберёмся с вашей ситуацией.
-              </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 {['37 лет опыта', 'Фельдшер скорой', 'Испания', 'Русский язык'].map((tag) => (
