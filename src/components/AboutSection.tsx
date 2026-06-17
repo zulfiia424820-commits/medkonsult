@@ -4,8 +4,8 @@ export function AboutSection() {
       <div className="mx-auto max-w-4xl">
         <div className="rounded-3xl border border-gray-200 bg-gray-50 p-10">
           <div className="flex flex-col md:flex-row gap-10 items-start">
-            <div className="w-40 h-40 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mx-auto md:mx-0">
-              <span className="text-6xl">👩‍⚕️</span>
+            <div className="w-40 h-40 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0 border-4 border-blue-100 shadow-md">
+              <img src="/zulfia.jpg" alt="Зульфия — фельдшер скорой помощи" className="w-full h-full object-cover object-top" />
             </div>
             <div>
               <h2 className="text-3xl font-bold text-gray-900">Здравствуйте, я — Зульфия!</h2>
